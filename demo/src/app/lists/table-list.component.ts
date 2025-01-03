@@ -34,7 +34,7 @@ import { BaseList } from './base-list';
 			<th>Address</th>
 		</thead>
 		<tbody #container>
-			<tr *ngFor="let item of scroll.viewPortItems">
+			<tr *ngFor="const item of scroll.viewPortItems">
 			  <td>{{item.index}}</td>
 			  <td>{{item.name}}</td>
 			  <td>{{item.gender}}</td>
