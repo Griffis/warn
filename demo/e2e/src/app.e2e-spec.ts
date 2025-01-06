@@ -2,7 +2,7 @@ import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
 describe('workspace-project App', () => {
-  const page: AppPage;
+  let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
