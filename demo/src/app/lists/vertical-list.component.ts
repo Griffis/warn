@@ -30,7 +30,7 @@ import { BaseList } from './base-list';
       [enableUnequalChildrenSizes]="randomSize"
       [items]="filteredList">
 
-      <list-item [randomHeight]="randomSize" *ngFor="let item of scroll.viewPortItems" [item]="item"> </list-item>
+      <list-item [randomHeight]="randomSize" *ngFor="const item of scroll.viewPortItems" [item]="item"> </list-item>
 
     </virtual-scroller>
   `
