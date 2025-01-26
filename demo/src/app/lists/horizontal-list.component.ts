@@ -37,7 +37,7 @@ import { BaseList } from './base-list';
       [horizontal]="true"
       [items]="filteredList" [RTL] = "rtl">
       
-      <list-item [randomWidth]="randomSize" *ngFor="let item of scroll.viewPortItems" class="inline" [item]="item"> </list-item>
+      <list-item [randomWidth]="randomSize" *ngFor="const item of scroll.viewPortItems" class="inline" [item]="item"> </list-item>
     </virtual-scroller>
   `,
   styleUrls: ['./horizontal-list.scss']
