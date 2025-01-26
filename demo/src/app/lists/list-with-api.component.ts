@@ -29,7 +29,7 @@ import { IPageInfo } from 'ngx-virtual-scroller';
 	  (vsStart)="shouldPrependItems && fetchMore($event)"
       (vsEnd)="!shouldPrependItems && fetchMore($event)">
 
-      <list-item [randomHeight]="randomSize" *ngFor="let item of scroll.viewPortItems" [item]="item"> </list-item>
+      <list-item [randomHeight]="randomSize" *ngFor="const item of scroll.viewPortItems" [item]="item"> </list-item>
       <div *ngIf="loading" class="loader">Loading...</div>
 
     </virtual-scroller>
