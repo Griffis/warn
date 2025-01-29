@@ -1,8 +1,8 @@
 /* SystemJS module definition */
-declare let module: NodeModule;
+declare const module: NodeModule;
 interface NodeModule {
   id: string;
 }
 
-declare let System: any;
+declare const System: any;
 declare module "menuspy";
