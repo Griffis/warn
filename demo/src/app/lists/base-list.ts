@@ -38,8 +38,8 @@ export class BaseList {
   }
   
   public static generateMultipleRandomItems(count: number): ListItem[] {
-	  let result = Array(count);
-  	  for (let i = 0; i < count; ++i) {
+	  const result = Array(count);
+  	  for (const i = 0; i < count; ++i) {
 		  result[i] = BaseList.generateRandomItem();
 	  }
 	  
