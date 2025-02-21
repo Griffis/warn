@@ -20,7 +20,7 @@ import { VerticalListComponent } from './lists/vertical-list.component';
 
 import { VirtualScrollerModule, VirtualScrollerDefaultOptions } from 'ngx-virtual-scroller';
 
-const customDefaultOptions = {
+let customDefaultOptions = {
 	scrollThrottlingTime: 0,
 	scrollDebounceTime: 0,
 	scrollAnimationTime: 750,
