@@ -1,0 +1,9 @@
+dist/
+node_modules/
+*.log
+/compiled
+*.map.js
+*.js
+/src/**/*.js
+ngx-virtual-scroller-*.tgz
+!docs/**/*

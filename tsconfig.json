@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+	"baseUrl": "./src",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": true,
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "demo",
+    "dist",
+    "compiled"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "angularCompilerOptions": {
+    "genDir": "compiled"
+  }
+}
